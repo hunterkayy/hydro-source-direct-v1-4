@@ -68,7 +68,7 @@ const ServiceWaterTesting = () => {
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg">
               <img 
-                src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&q=80" 
+                src="https://images.unsplash.com/photo-1580656460692-e0851c174313?auto=format&fit=crop&q=80" 
                 alt="Water Testing Process" 
                 className="w-full h-full object-cover"
               />

@@ -1,4 +1,3 @@
-
 import { Helmet } from 'react-helmet';
 import Layout from '../components/layout/Layout';
 import CtaSection from '../components/home/CtaSection';

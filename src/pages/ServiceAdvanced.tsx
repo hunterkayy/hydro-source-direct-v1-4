@@ -68,7 +68,7 @@ const ServiceAdvanced = () => {
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg">
               <img 
-                src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&q=80" 
+                src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&q=80" 
                 alt="Water treatment system maintenance" 
                 className="w-full h-full object-cover"
               />
@@ -149,7 +149,7 @@ const ServiceAdvanced = () => {
               <div className="md:w-1/2">
                 <div className="rounded-lg overflow-hidden shadow-md">
                   <img 
-                    src="https://images.unsplash.com/photo-1594328480765-c294663cca6e?auto=format&fit=crop&q=80" 
+                    src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&q=80" 
                     alt="Water treatment system repair" 
                     className="w-full h-full object-cover"
                   />

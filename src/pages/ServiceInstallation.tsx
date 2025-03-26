@@ -32,8 +32,8 @@ const ServiceInstallation = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="rounded-lg overflow-hidden shadow-lg order-2 lg:order-1">
               <img 
-                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80" 
-                alt="Professional installation technician" 
+                src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80" 
+                alt="Professional plumber installing water treatment system" 
                 className="w-full h-full object-cover"
               />
             </div>

@@ -14,7 +14,7 @@ const FeaturedProducts = () => {
       name: "HSD S1",
       category: "Water Softener",
       description: "Premium water softener that eliminates hard water problems, featuring advanced ceramic technology for superior performance and longer lifespan.",
-      image: "https://images.unsplash.com/photo-1582408921715-18e7316161fb?auto=format&fit=crop&q=80",
+      image: "https://images.unsplash.com/photo-1606214174585-fe31582dc6ee?auto=format&fit=crop&q=80",
       link: "/solutions/water-softeners"
     },
     {
@@ -22,7 +22,7 @@ const FeaturedProducts = () => {
       name: "HSD RO 600",
       category: "Reverse Osmosis System",
       description: "High-capacity reverse osmosis system delivering crystal-clear drinking water, removing up to 99% of contaminants for the purest taste.",
-      image: "https://images.unsplash.com/photo-1566393028639-d108a42c46a7?auto=format&fit=crop&q=80",
+      image: "https://images.unsplash.com/photo-1562319926-4dbdecda5535?auto=format&fit=crop&q=80",
       link: "/solutions/reverse-osmosis"
     },
     {
@@ -30,7 +30,7 @@ const FeaturedProducts = () => {
       name: "HSD LD1",
       category: "Leak Detection System",
       description: "Advanced leak detection sensor that provides 24/7 monitoring and automatic water shutoff to prevent water damage in your home.",
-      image: "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&q=80",
+      image: "https://images.unsplash.com/photo-1584267385494-9fdd9a71ad75?auto=format&fit=crop&q=80",
       link: "/solutions/leak-detection"
     }
   ];

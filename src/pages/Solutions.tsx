@@ -12,25 +12,25 @@ const Solutions = () => {
     {
       title: "Water Softeners",
       description: "Eliminate hard water problems with our premium water softeners featuring advanced ceramic valve technology for reliability and longevity.",
-      image: "https://images.unsplash.com/photo-1582408921715-18e7316161fb?auto=format&fit=crop&q=80",
+      image: "https://images.unsplash.com/photo-1606214174585-fe31582dc6ee?auto=format&fit=crop&q=80",
       link: "/solutions/water-softeners"
     },
     {
       title: "Iron Filters",
       description: "Remove iron, sulfur, and manganese from your water supply, eliminating stains, odors, and metallic taste.",
-      image: "https://images.unsplash.com/photo-1516913251866-7b1de6ea4fc8?auto=format&fit=crop&q=80",
+      image: "https://images.unsplash.com/photo-1583795631352-83a648b1ea53?auto=format&fit=crop&q=80",
       link: "/solutions/iron-filters"
     },
     {
       title: "Reverse Osmosis",
       description: "Enjoy crystal-clear drinking water with our advanced reverse osmosis systems, removing up to 99% of contaminants.",
-      image: "https://images.unsplash.com/photo-1566393028639-d108a42c46a7?auto=format&fit=crop&q=80",
+      image: "https://images.unsplash.com/photo-1562319926-4dbdecda5535?auto=format&fit=crop&q=80",
       link: "/solutions/reverse-osmosis"
     },
     {
       title: "UV Systems",
       description: "Protect your family from harmful bacteria and viruses with our ultraviolet water purification systems.",
-      image: "https://images.unsplash.com/photo-1590439471364-192aa70c0b53?auto=format&fit=crop&q=80",
+      image: "https://images.unsplash.com/photo-1541519920349-237d9c325cac?auto=format&fit=crop&q=80",
       link: "/solutions/uv-systems"
     }
   ];
