@@ -28,7 +28,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="section-padding bg-white relative overflow-hidden">
+    <section className="section-padding bg-white relative overflow-hidden" id="services">
       {/* Background design element */}
       <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-hsd-blue-light/10 blur-3xl"></div>
       <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-hsd-blue/10 blur-3xl"></div>
@@ -50,17 +50,17 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-lg p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all"
+              className="bg-white rounded-lg p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all group"
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <div className="w-14 h-14 rounded-lg bg-hsd-blue flex items-center justify-center mb-6">
+              <div className="w-14 h-14 rounded-lg bg-hsd-blue flex items-center justify-center mb-6 group-hover:scale-105 transition-transform">
                 <service.icon className="h-7 w-7 text-white" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-hsd-grey-dark">{service.title}</h3>
               <p className="text-gray-600 mb-4">{service.description}</p>
               <Link 
                 to={service.link} 
-                className="text-hsd-blue font-medium hover:text-hsd-blue-light transition-custom"
+                className="text-hsd-blue font-medium hover:text-hsd-blue-light transition-custom group-hover:underline"
               >
                 Learn more
               </Link>
