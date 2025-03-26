@@ -1,26 +1,26 @@
 
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
-import { Flask, Tools, Wrench } from 'lucide-react';
+import { Beaker, Wrench, Settings } from 'lucide-react';
 
 const ServicesSection = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   const services = [
     {
-      icon: Flask,
+      icon: Beaker,
       title: "Water Testing",
       description: "Our comprehensive water testing services identify contaminants and water quality issues in your home, providing a clear picture of your water treatment needs.",
       link: "/services/water-testing"
     },
     {
-      icon: Tools,
+      icon: Wrench,
       title: "Professional Installation",
       description: "Our certified technicians ensure your water treatment system is installed correctly, optimizing performance and minimizing the risk of issues.",
       link: "/services/installation"
     },
     {
-      icon: Wrench,
+      icon: Settings,
       title: "Advanced Service",
       description: "Keep your water treatment system performing at its best with our regular maintenance and prompt repair services by experienced professionals.",
       link: "/services/service"
