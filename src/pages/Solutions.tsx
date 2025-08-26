@@ -352,20 +352,28 @@ const Solutions = () => {
       </section>
 
       {/* Combined Technology & Features Section */}
-      <section className="py-12 bg-slate-900 text-white">
-        <div className="container-custom">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+      <section className="relative py-16 bg-gradient-to-br from-hsd-blue-light/10 via-white to-hsd-blue/5 overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-10 right-10 w-64 h-64 bg-gradient-to-r from-hsd-blue-light/10 to-hsd-blue/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-10 left-10 w-80 h-80 bg-gradient-to-r from-hsd-blue/8 to-hsd-blue-dark/8 rounded-full blur-3xl animate-pulse" style={{
+            animationDelay: '1s'
+          }}></div>
+        </div>
+
+        <div className="container-custom relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
               Why Choose the Pro Series
             </h2>
-            <p className="text-lg text-slate-300 max-w-2xl mx-auto">
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
               Advanced technology and superior engineering for reliable, efficient water softening
             </p>
           </div>
 
           {/* Technology Highlights */}
           <div className="mb-16">
-            <h3 className="text-xl font-semibold text-center mb-8 text-slate-200">
+            <h3 className="text-xl font-semibold text-center mb-8 text-slate-800">
               Advanced Technology and Applied Science
             </h3>
             <div className="grid md:grid-cols-4 gap-8">
@@ -385,10 +393,10 @@ const Solutions = () => {
                 const IconComponent = tech.icon;
                 return (
                   <div key={index} className="flex flex-col items-center">
-                    <div className="w-16 h-16 border-2 border-white/20 rounded-full flex items-center justify-center mb-4">
-                      <IconComponent className="w-8 h-8" />
+                    <div className="w-16 h-16 bg-gradient-to-r from-hsd-blue-light to-hsd-blue rounded-full flex items-center justify-center mb-4 shadow-lg">
+                      <IconComponent className="w-8 h-8 text-white" />
                     </div>
-                    <p className="text-sm font-medium">{tech.label}</p>
+                    <p className="text-sm font-medium text-slate-700">{tech.label}</p>
                   </div>
                 );
               })}
@@ -400,14 +408,14 @@ const Solutions = () => {
             {proSeriesData.shared_features.map((feature, index) => {
               const IconComponent = feature.icon;
               return (
-                <div key={index} className="text-center p-6 bg-white/5 rounded-lg border border-white/10">
-                  <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div key={index} className="group text-center p-8 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-white/30 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="w-16 h-16 bg-gradient-to-r from-hsd-blue-light to-hsd-blue rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-white mb-2">
+                  <h3 className="text-xl font-semibold text-slate-900 mb-3">
                     {feature.title}
                   </h3>
-                  <p className="text-slate-300">
+                  <p className="text-slate-600 leading-relaxed">
                     {feature.description}
                   </p>
                 </div>
