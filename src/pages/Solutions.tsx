@@ -198,7 +198,7 @@ const Solutions = () => {
         <div className="container-custom relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight bg-gradient-to-r from-[#56CCF2] to-[#2F80ED] bg-clip-text text-transparent">
+              <h1 className="text-4xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
                 Pro Series Water Softener
               </h1>
               <p className="text-xl text-slate-600 mb-4 font-medium">
