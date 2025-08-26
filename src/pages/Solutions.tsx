@@ -373,9 +373,6 @@ const Solutions = () => {
 
           {/* Technology Highlights */}
           <div className="mb-16">
-            <h3 className="text-xl font-semibold text-center mb-8 text-slate-800">
-              Advanced Technology and Applied Science
-            </h3>
             <div className="grid md:grid-cols-4 gap-8">
               {[{
                 icon: Award,
