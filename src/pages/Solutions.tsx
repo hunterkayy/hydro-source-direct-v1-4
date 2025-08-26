@@ -204,7 +204,7 @@ const Solutions = () => {
                 <div className="bg-gradient-to-br from-white/80 to-blue-50/80 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/20">
                   <div className="space-y-6">
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-xl flex items-center justify-center">
+                      <div className="w-12 h-12 bg-gradient-to-r from-hsd-blue-light to-hsd-blue rounded-xl flex items-center justify-center">
                         <Droplets className="w-6 h-6 text-white" />
                       </div>
                       <div>
@@ -213,7 +213,7 @@ const Solutions = () => {
                       </div>
                     </div>
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center">
+                      <div className="w-12 h-12 bg-gradient-to-r from-hsd-blue to-hsd-blue-dark rounded-xl flex items-center justify-center">
                         <Shield className="w-6 h-6 text-white" />
                       </div>
                       <div>
@@ -222,7 +222,7 @@ const Solutions = () => {
                       </div>
                     </div>
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
+                      <div className="w-12 h-12 bg-gradient-to-r from-hsd-blue-light to-hsd-blue rounded-xl flex items-center justify-center">
                         <Zap className="w-6 h-6 text-white" />
                       </div>
                       <div>
