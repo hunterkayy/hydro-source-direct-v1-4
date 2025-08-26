@@ -197,7 +197,7 @@ const Solutions = () => {
             </div>
             <div className="relative">
               <img 
-                src="/lovable-uploads/c0046fe2-4a63-4a89-8b7e-91e63df91c4e.png" 
+                src="/lovable-uploads/c0046fe2-4a63-4a89-8b7e-91e63df91c4e.png"
                 alt="HSD Pro Series Water Softener"
                 className="w-full max-w-md mx-auto rounded-lg shadow-xl"
               />
@@ -257,7 +257,7 @@ const Solutions = () => {
                 <CardHeader className="text-center pb-4">
                   <div className="relative mb-4">
                     <img 
-                      src="/hsd-pro-water-softener.png"
+                      src="/lovable-uploads/c0046fe2-4a63-4a89-8b7e-91e63df91c4e.png"
                       alt={model.name}
                       className="w-full max-w-xs mx-auto rounded-lg"
                     />
