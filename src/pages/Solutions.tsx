@@ -216,39 +216,6 @@ const Solutions = () => {
         </div>
       </section>
 
-      {/* Why Choose Pro Series */}
-      <section className="section-padding">
-        <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
-              Why Choose the Pro Series
-            </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Advanced technology and superior engineering for reliable, efficient water softening
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {proSeriesData.shared_features.map((feature, index) => {
-              const IconComponent = feature.icon;
-              return (
-                <div key={index} className="text-center p-6">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <IconComponent className="w-8 h-8 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-slate-900 mb-2">
-                    {feature.title}
-                  </h3>
-                  <p className="text-slate-600">
-                    {feature.description}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
       {/* Product Lineup */}
       <section className="section-padding bg-slate-50">
         <div className="container-custom">
@@ -328,6 +295,40 @@ const Solutions = () => {
           </div>
         </div>
       </section>
+
+      {/* Why Choose Pro Series */}
+      <section className="section-padding">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
+              Why Choose the Pro Series
+            </h2>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              Advanced technology and superior engineering for reliable, efficient water softening
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {proSeriesData.shared_features.map((feature, index) => {
+              const IconComponent = feature.icon;
+              return (
+                <div key={index} className="text-center p-6">
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <IconComponent className="w-8 h-8 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-slate-900 mb-2">
+                    {feature.title}
+                  </h3>
+                  <p className="text-slate-600">
+                    {feature.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
 
       {/* Comparison Table */}
       <section id="comparison" className="section-padding">
