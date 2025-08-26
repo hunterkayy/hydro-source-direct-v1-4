@@ -183,7 +183,7 @@ const Solutions = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-br from-slate-50 to-blue-50">
+      <section className="relative pt-24 pb-12 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -297,7 +297,7 @@ const Solutions = () => {
       </section>
 
       {/* Warranty Block */}
-      <section className="section-padding">
+      <section className="py-12">
         <div className="container-custom">
           <Card className="max-w-4xl mx-auto bg-gradient-to-r from-green-50 to-blue-50 border-green-200">
             <CardContent className="p-8 text-center">
@@ -336,9 +336,9 @@ const Solutions = () => {
       </section>
 
       {/* Technology Strip */}
-      <section className="section-padding bg-slate-900 text-white">
+      <section className="py-12 bg-slate-900 text-white">
         <div className="container-custom text-center">
-          <h2 className="text-2xl lg:text-3xl font-bold mb-12">
+          <h2 className="text-2xl lg:text-3xl font-bold mb-8">
             Advanced Technology and Applied Science for Superior Water Treatment
           </h2>
           <div className="grid md:grid-cols-4 gap-8">
@@ -363,9 +363,9 @@ const Solutions = () => {
       </section>
 
       {/* Why Choose Pro Series */}
-      <section className="section-padding">
+      <section className="py-12">
         <div className="container-custom">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
               Why Choose the Pro Series
             </h2>
@@ -396,9 +396,9 @@ const Solutions = () => {
       </section>
 
       {/* Comparison Table */}
-      <section id="comparison" className="section-padding">
+      <section id="comparison" className="py-12">
         <div className="container-custom">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
               Model Comparison
             </h2>
@@ -448,7 +448,7 @@ const Solutions = () => {
       </section>
 
       {/* CTA Panel */}
-      <section className="section-padding bg-gradient-to-r from-primary to-blue-600 text-white">
+      <section className="py-12 bg-gradient-to-r from-primary to-blue-600 text-white">
         <div className="container-custom text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Experience Better Water Today
