@@ -175,7 +175,7 @@ const Solutions = () => {
             <div className="w-24 h-24 border border-cyan-200/40 rounded-full absolute bottom-32 right-32 animate-fade-in" style={{
             animationDelay: '0.5s'
           }}></div>
-            <div className="w-16 h-16 bg-gradient-to-r from-cyan-300/20 to-blue-400/20 rounded-lg absolute top-40 right-20 rotate-45 animate-fade-in" style={{
+            <div className="w-16 h-16 bg-gradient-to-r from-hsd-blue-light to-hsd-blue rounded-lg absolute top-40 right-20 rotate-45 animate-fade-in" style={{
             animationDelay: '1s'
           }}></div>
           </div>
