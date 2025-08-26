@@ -183,34 +183,77 @@ const Solutions = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative pt-24 pb-12 bg-gradient-to-br from-slate-50 to-blue-50">
-        <div className="container-custom">
+      <section className="relative pt-24 pb-12 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-400/20 to-indigo-400/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-indigo-400/15 to-purple-400/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full">
+            <div className="w-32 h-32 border border-blue-200/30 rounded-lg absolute top-20 left-20 rotate-12 animate-fade-in"></div>
+            <div className="w-24 h-24 border border-indigo-200/40 rounded-full absolute bottom-32 right-32 animate-fade-in" style={{animationDelay: '0.5s'}}></div>
+            <div className="w-16 h-16 bg-gradient-to-r from-blue-300/20 to-indigo-300/20 rounded-lg absolute top-40 right-20 rotate-45 animate-fade-in" style={{animationDelay: '1s'}}></div>
+          </div>
+        </div>
+
+        <div className="container-custom relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl lg:text-6xl font-bold text-slate-900 mb-6">
+            <div className="animate-fade-in">
+              <h1 className="text-4xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
                 Pro Series Water Softener
               </h1>
-              <p className="text-xl text-slate-600 mb-4">
+              <p className="text-xl text-slate-600 mb-4 font-medium">
                 High-Efficiency Water Softening for Your Home
               </p>
-              <p className="text-lg text-slate-600 mb-8">
+              <p className="text-lg text-slate-600 mb-8 leading-relaxed">
                 Experience the benefits of whole-home soft water with advanced ceramic valve technology and smart regeneration.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/contact" className="btn-primary">
+                <Link to="/contact" className="btn-primary hover-scale">
                   Get a Quote
                 </Link>
-                <button onClick={scrollToComparison} className="btn-secondary">
+                <button onClick={scrollToComparison} className="btn-secondary hover-scale">
                   Compare Models
                 </button>
               </div>
             </div>
-            <div className="relative">
-              <img 
-                src="/lovable-uploads/c0046fe2-4a63-4a89-8b7e-91e63df91c4e.png"
-                alt="HSD Pro Series Water Softener"
-                className="w-full max-w-md mx-auto rounded-lg shadow-xl"
-              />
+            <div className="relative animate-fade-in" style={{animationDelay: '0.3s'}}>
+              {/* Modern geometric design instead of product image */}
+              <div className="relative max-w-md mx-auto">
+                <div className="bg-gradient-to-br from-white/80 to-blue-50/80 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/20">
+                  <div className="space-y-6">
+                    <div className="flex items-center gap-4">
+                      <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-xl flex items-center justify-center">
+                        <Droplets className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-slate-900">Pure Water</h3>
+                        <p className="text-sm text-slate-600">Advanced Filtration</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <div className="w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center">
+                        <Shield className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-slate-900">Lifetime Warranty</h3>
+                        <p className="text-sm text-slate-600">Tank & Ceramic Discs</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
+                        <Zap className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-slate-900">Smart Technology</h3>
+                        <p className="text-sm text-slate-600">Intelligent Regeneration</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* Floating accent elements */}
+                <div className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-full opacity-60 animate-pulse"></div>
+                <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-gradient-to-r from-indigo-400 to-purple-400 rounded-full opacity-60 animate-pulse" style={{animationDelay: '1s'}}></div>
+              </div>
             </div>
           </div>
         </div>
