@@ -171,13 +171,13 @@ const Solutions = () => {
           animationDelay: '1s'
         }}></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full">
-            <div className="w-32 h-32 border border-hsd-blue-light/30 rounded-lg absolute top-20 left-20 rotate-12 animate-fade-in"></div>
-            <div className="w-24 h-24 border border-hsd-blue/40 rounded-full absolute bottom-32 right-32 animate-fade-in" style={{
-            animationDelay: '0.5s'
-          }}></div>
-            <div className="w-16 h-16 bg-gradient-to-r from-hsd-blue-light to-hsd-blue rounded-lg absolute top-40 right-20 rotate-45 animate-fade-in" style={{
-            animationDelay: '1s'
-          }}></div>
+            {/* Water Droplet Decorations */}
+            <div className="w-6 h-8 bg-gradient-to-b from-hsd-blue-light/60 to-hsd-blue/80 rounded-full absolute top-16 left-24 animate-fade-in" style={{ borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%' }}></div>
+            <div className="w-4 h-5 bg-gradient-to-b from-hsd-blue/50 to-hsd-blue-dark/70 rounded-full absolute top-32 left-32 animate-fade-in" style={{ borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%', animationDelay: '0.3s' }}></div>
+            <div className="w-8 h-10 bg-gradient-to-b from-hsd-blue-light/40 to-hsd-blue/60 rounded-full absolute bottom-24 right-16 animate-fade-in" style={{ borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%', animationDelay: '0.6s' }}></div>
+            <div className="w-5 h-6 bg-gradient-to-b from-hsd-blue/60 to-hsd-blue-dark/80 rounded-full absolute bottom-40 right-32 animate-fade-in" style={{ borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%', animationDelay: '0.9s' }}></div>
+            <div className="w-3 h-4 bg-gradient-to-b from-hsd-blue-light/70 to-hsd-blue/90 rounded-full absolute top-40 right-24 animate-fade-in" style={{ borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%', animationDelay: '1.2s' }}></div>
+            <div className="w-7 h-9 bg-gradient-to-b from-hsd-blue/30 to-hsd-blue-dark/50 rounded-full absolute top-64 left-16 animate-fade-in" style={{ borderRadius: '50% 50% 50% 50% / 60% 60% 40% 40%', animationDelay: '1.5s' }}></div>
           </div>
         </div>
 
