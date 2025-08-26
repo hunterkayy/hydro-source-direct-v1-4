@@ -40,7 +40,7 @@ const Hero = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
-            Pure Water, Healthy Living—
+            Pure Water, Peace of Mind—
             <span className="text-gradient">HydroSource Direct</span> Delivers.
           </h1>
           
@@ -49,7 +49,7 @@ const Hero = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
-            Experience the difference of professionally treated water in your home. Protect your family's health, extend the life of your appliances, and enjoy the peace of mind that comes with HydroSource Direct's premium water treatment solutions.
+            At HydroSource Direct, we combine cutting-edge technology with hometown service - providing high-performance water treatment solutions that safeguard your health, protect your home, and deliver lasting peace of mind.
           </p>
           
           <div 
