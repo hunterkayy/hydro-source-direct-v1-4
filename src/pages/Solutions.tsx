@@ -368,6 +368,33 @@ const Solutions = () => {
         </div>
       </section>
 
+      {/* Technology Strip */}
+      <section className="section-padding bg-slate-900 text-white">
+        <div className="container-custom text-center">
+          <h2 className="text-2xl lg:text-3xl font-bold mb-12">
+            Advanced Technology and Applied Science for Superior Water Treatment
+          </h2>
+          <div className="grid md:grid-cols-4 gap-8">
+            {[
+              { icon: Award, label: "Ceramic Disc Technology" },
+              { icon: Zap, label: "High-Flow Riser" },
+              { icon: Droplets, label: "Smart Metering" },
+              { icon: Shield, label: "NSF Media" }
+            ].map((tech, index) => {
+              const IconComponent = tech.icon;
+              return (
+                <div key={index} className="flex flex-col items-center">
+                  <div className="w-16 h-16 border-2 border-white/20 rounded-full flex items-center justify-center mb-4">
+                    <IconComponent className="w-8 h-8" />
+                  </div>
+                  <p className="text-sm font-medium">{tech.label}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* Comparison Table */}
       <section id="comparison" className="section-padding">
         <div className="container-custom">
@@ -419,34 +446,6 @@ const Solutions = () => {
           </div>
         </div>
       </section>
-
-      {/* Technology Strip */}
-      <section className="section-padding bg-slate-900 text-white">
-        <div className="container-custom text-center">
-          <h2 className="text-2xl lg:text-3xl font-bold mb-12">
-            Advanced Technology and Applied Science for Superior Water Treatment
-          </h2>
-          <div className="grid md:grid-cols-4 gap-8">
-            {[
-              { icon: Award, label: "Ceramic Disc Technology" },
-              { icon: Zap, label: "High-Flow Riser" },
-              { icon: Droplets, label: "Smart Metering" },
-              { icon: Shield, label: "NSF Media" }
-            ].map((tech, index) => {
-              const IconComponent = tech.icon;
-              return (
-                <div key={index} className="flex flex-col items-center">
-                  <div className="w-16 h-16 border-2 border-white/20 rounded-full flex items-center justify-center mb-4">
-                    <IconComponent className="w-8 h-8" />
-                  </div>
-                  <p className="text-sm font-medium">{tech.label}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
 
       {/* CTA Panel */}
       <section className="section-padding bg-gradient-to-r from-primary to-blue-600 text-white">
