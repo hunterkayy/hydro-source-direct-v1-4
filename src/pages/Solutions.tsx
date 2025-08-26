@@ -16,7 +16,17 @@ import { CheckCircle, Droplets, Shield, Zap, Settings, Award } from 'lucide-reac
 
 const Solutions = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [selectedModel, setSelectedModel] = useState<string | null>(null);
+  const [selectedModels, setSelectedModels] = useState<Set<string>>(new Set());
+
+  const toggleModelSpecs = (modelId: string) => {
+    const newSelectedModels = new Set(selectedModels);
+    if (newSelectedModels.has(modelId)) {
+      newSelectedModels.delete(modelId);
+    } else {
+      newSelectedModels.add(modelId);
+    }
+    setSelectedModels(newSelectedModels);
+  };
 
   // HSD Pro Series Data
   const proSeriesData = {
@@ -290,17 +300,17 @@ const Solutions = () => {
 
                   <div className="space-y-2">
                     <button 
-                      onClick={() => setSelectedModel(selectedModel === model.id ? null : model.id)}
+                      onClick={() => toggleModelSpecs(model.id)}
                       className="w-full btn-secondary text-sm"
                     >
-                      {selectedModel === model.id ? 'Hide' : 'View'} Full Specs
+                      {selectedModels.has(model.id) ? 'Hide' : 'View'} Full Specs
                     </button>
                     <Link to="/contact" className="w-full btn-primary block text-center">
                       Get this System
                     </Link>
                   </div>
 
-                  {selectedModel === model.id && (
+                  {selectedModels.has(model.id) && (
                     <div className="mt-4 p-4 bg-white border rounded-lg animate-fade-in">
                       <div className="grid grid-cols-2 gap-2 text-sm">
                         <div><strong>Max Iron:</strong> {model.max_iron_ppm} ppm</div>
