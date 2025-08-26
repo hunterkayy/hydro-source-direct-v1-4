@@ -85,10 +85,6 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-bold mb-4">Contact Us</h4>
             <ul className="space-y-3">
-              <li className="flex items-start">
-                <MapPin className="h-5 w-5 mr-2 mt-0.5 text-hsd-blue-light" />
-                <span className="text-gray-300">123 Water Way, Clearwater, FL 33755</span>
-              </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 text-hsd-blue-light" />
                 <a href="tel:+18001234567" className="text-gray-300 hover:text-white transition-custom">1-800-123-4567</a>
