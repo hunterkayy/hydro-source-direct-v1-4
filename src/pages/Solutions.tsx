@@ -163,7 +163,7 @@ const Solutions = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative pt-24 pb-12 bg-gradient-to-br from-hsd-blue-light to-hsd-blue overflow-hidden">
+      <section className="relative pt-24 pb-12 bg-gradient-to-br from-hsd-blue-light/20 via-hsd-blue/15 to-hsd-blue/25 overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-400/20 to-indigo-400/20 rounded-full blur-3xl animate-pulse"></div>
