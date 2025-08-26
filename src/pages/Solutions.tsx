@@ -189,9 +189,9 @@ const Solutions = () => {
           <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-400/20 to-indigo-400/20 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-indigo-400/15 to-purple-400/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full">
-            <div className="w-32 h-32 border border-blue-200/30 rounded-lg absolute top-20 left-20 rotate-12 animate-fade-in"></div>
-            <div className="w-24 h-24 border border-cyan-200/40 rounded-full absolute bottom-32 right-32 animate-fade-in" style={{animationDelay: '0.5s'}}></div>
-            <div className="w-16 h-16 bg-gradient-to-r from-cyan-300/20 to-blue-400/20 rounded-lg absolute top-40 right-20 rotate-45 animate-fade-in" style={{animationDelay: '1s'}}></div>
+            <div className="w-32 h-32 border border-hsd-blue/30 rounded-lg absolute top-20 left-20 rotate-12 animate-fade-in"></div>
+            <div className="w-24 h-24 border border-hsd-blue-light/40 rounded-full absolute bottom-32 right-32 animate-fade-in" style={{animationDelay: '0.5s'}}></div>
+            <div className="w-16 h-16 bg-gradient-to-r from-hsd-blue-light to-hsd-blue rounded-lg absolute top-40 right-20 rotate-45 animate-fade-in" style={{animationDelay: '1s'}}></div>
           </div>
         </div>
 
