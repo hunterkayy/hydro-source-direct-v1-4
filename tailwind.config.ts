@@ -67,12 +67,8 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				hsd: {
-					'blue-light': '#56CCF2',
-					'blue': '#2F80ED',
-					'grey-dark': '#333333',
-					'white': '#F2F2F2'
-				}
+				'hsd-blue-light': 'hsl(var(--hsd-blue-light))',
+				'hsd-blue': 'hsl(var(--hsd-blue))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
