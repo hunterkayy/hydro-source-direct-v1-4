@@ -312,44 +312,6 @@ const Solutions = () => {
         </div>
       </section>
 
-      {/* Warranty Block */}
-      <section className="py-12">
-        <div className="container-custom">
-          <Card className="max-w-4xl mx-auto bg-gradient-to-r from-green-50 to-blue-50 border-green-200">
-            <CardContent className="p-8 text-center">
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">
-                Industry-Leading Warranty
-              </h2>
-              <div className="grid md:grid-cols-2 gap-8 text-left">
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" />
-                    <div>
-                      <h3 className="font-semibold text-slate-900">Lifetime Coverage</h3>
-                      <p className="text-slate-600">Tanks & Ceramic Valve Wear Discs</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" />
-                    <div>
-                      <h3 className="font-semibold text-slate-900">10-Year Coverage</h3>
-                      <p className="text-slate-600">All other parts, including premium resin</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
-                  <h4 className="font-semibold text-yellow-800 mb-2">Important Notes:</h4>
-                  <ul className="text-sm text-yellow-700 space-y-1">
-                    <li>• Resin must not be exposed to chlorine/oxidizers</li>
-                    <li>• Yearly maintenance + HSD Resin Cleanser required</li>
-                    <li>• Hardness/iron must be within specified limits</li>
-                  </ul>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
 
       {/* Combined Technology & Features Section */}
       <section className="relative py-16 bg-gradient-to-br from-hsd-blue-light/10 via-white to-hsd-blue/5 overflow-hidden">
@@ -392,6 +354,7 @@ const Solutions = () => {
           </div>
         </div>
       </section>
+
 
       {/* Comparison Table */}
       <section id="comparison" className="py-12">
