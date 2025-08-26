@@ -452,46 +452,6 @@ const Solutions = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="section-padding">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 text-center mb-12">
-              Frequently Asked Questions
-            </h2>
-            
-            <Accordion type="single" collapsible className="w-full">
-              <AccordionItem value="item-1">
-                <AccordionTrigger>Which model is right for my home?</AccordionTrigger>
-                <AccordionContent>
-                  The right model depends on your household size, water usage, and hardness level. The Pro32 is ideal for 1-3 people, Pro40 for 3-5 people, and Pro48 for larger families or homes with very hard water. Consider your peak water usage and hardness test results when choosing.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-2">
-                <AccordionTrigger>How often will it regenerate and how much salt does it use?</AccordionTrigger>
-                <AccordionContent>
-                  Our smart metered regeneration technology only regenerates when needed based on actual water usage, not on a timer. This typically means regeneration every 3-7 days for most households, using 6-10 pounds of salt per cycle depending on your model and hardness level.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-3">
-                <AccordionTrigger>What maintenance is required?</AccordionTrigger>
-                <AccordionContent>
-                  Annual maintenance includes checking salt levels, cleaning the brine tank, and using HSD Resin Cleanser to maintain optimal performance. The system's advanced controls will alert you when maintenance is due. Professional service is recommended annually.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-4">
-                <AccordionTrigger>What's covered under the warranty?</AccordionTrigger>
-                <AccordionContent>
-                  We offer a lifetime warranty on tanks and ceramic valve wear discs, plus 10 years on all other parts including the premium resin. This coverage requires proper maintenance, water conditions within specifications, and protection from chlorine exposure.
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
-          </div>
-        </div>
-      </section>
     </Layout>
   );
 };
