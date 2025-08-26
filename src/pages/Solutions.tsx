@@ -446,8 +446,8 @@ const Solutions = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
             Reduce scale buildup, eliminate stains, and improve your appliance efficiency with our advanced water softening technology.
           </p>
-          <Link to="/contact" className="btn-secondary bg-white text-primary hover:bg-gray-100">
-            Schedule Free Water Consultation
+           <Link to="/contact" className="btn-secondary bg-white text-primary hover:bg-gray-100">
+            Request Free Consultation
           </Link>
         </div>
       </section>
