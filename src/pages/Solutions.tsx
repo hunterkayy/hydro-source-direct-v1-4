@@ -110,7 +110,7 @@ const Solutions = () => {
                 to="/contact" 
                 className="btn-secondary"
               >
-                Schedule Consultation
+                Request Consultation
               </Link>
             </div>
           </div>
