@@ -183,11 +183,11 @@ const Solutions = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative pt-24 pb-12 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 overflow-hidden">
+      <section className="relative pt-24 pb-12 bg-gradient-to-br from-hsd-blue-light/10 via-hsd-blue-light/20 to-hsd-blue/30 overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-400/20 to-indigo-400/20 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-indigo-400/15 to-purple-400/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-hsd-blue-light/20 to-hsd-blue/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-hsd-blue-light/15 to-hsd-blue/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full">
             <div className="w-32 h-32 border border-hsd-blue/30 rounded-lg absolute top-20 left-20 rotate-12 animate-fade-in"></div>
             <div className="w-24 h-24 border border-hsd-blue-light/40 rounded-full absolute bottom-32 right-32 animate-fade-in" style={{animationDelay: '0.5s'}}></div>
