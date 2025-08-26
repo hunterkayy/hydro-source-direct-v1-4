@@ -213,7 +213,7 @@ const Solutions = () => {
                       </div>
                     </div>
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-gradient-to-r from-hsd-blue to-hsd-blue-dark rounded-xl flex items-center justify-center">
+                      <div className="w-12 h-12 bg-gradient-to-r from-hsd-blue-light to-hsd-blue rounded-xl flex items-center justify-center">
                         <Shield className="w-6 h-6 text-white" />
                       </div>
                       <div>
