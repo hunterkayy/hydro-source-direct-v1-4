@@ -351,65 +351,68 @@ const Solutions = () => {
         </div>
       </section>
 
-      {/* Technology Strip */}
+      {/* Combined Technology & Features Section */}
       <section className="py-12 bg-slate-900 text-white">
-        <div className="container-custom text-center">
-          <h2 className="text-2xl lg:text-3xl font-bold mb-8">
-            Advanced Technology and Applied Science for Superior Water Treatment
-          </h2>
-          <div className="grid md:grid-cols-4 gap-8">
-            {[{
-            icon: Award,
-            label: "Ceramic Disc Technology"
-          }, {
-            icon: Zap,
-            label: "High-Flow Riser"
-          }, {
-            icon: Droplets,
-            label: "Smart Metering"
-          }, {
-            icon: Shield,
-            label: "NSF Media"
-          }].map((tech, index) => {
-            const IconComponent = tech.icon;
-            return <div key={index} className="flex flex-col items-center">
-                  <div className="w-16 h-16 border-2 border-white/20 rounded-full flex items-center justify-center mb-4">
-                    <IconComponent className="w-8 h-8" />
-                  </div>
-                  <p className="text-sm font-medium">{tech.label}</p>
-                </div>;
-          })}
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Pro Series */}
-      <section className="py-12">
         <div className="container-custom">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               Why Choose the Pro Series
             </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            <p className="text-lg text-slate-300 max-w-2xl mx-auto">
               Advanced technology and superior engineering for reliable, efficient water softening
             </p>
           </div>
-          
+
+          {/* Technology Highlights */}
+          <div className="mb-16">
+            <h3 className="text-xl font-semibold text-center mb-8 text-slate-200">
+              Advanced Technology and Applied Science
+            </h3>
+            <div className="grid md:grid-cols-4 gap-8">
+              {[{
+                icon: Award,
+                label: "Ceramic Disc Technology"
+              }, {
+                icon: Zap,
+                label: "High-Flow Riser"
+              }, {
+                icon: Droplets,
+                label: "Smart Metering"
+              }, {
+                icon: Shield,
+                label: "NSF Media"
+              }].map((tech, index) => {
+                const IconComponent = tech.icon;
+                return (
+                  <div key={index} className="flex flex-col items-center">
+                    <div className="w-16 h-16 border-2 border-white/20 rounded-full flex items-center justify-center mb-4">
+                      <IconComponent className="w-8 h-8" />
+                    </div>
+                    <p className="text-sm font-medium">{tech.label}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Detailed Features */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {proSeriesData.shared_features.map((feature, index) => {
-            const IconComponent = feature.icon;
-            return <div key={index} className="text-center p-6">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <IconComponent className="w-8 h-8 text-primary" />
+              const IconComponent = feature.icon;
+              return (
+                <div key={index} className="text-center p-6 bg-white/5 rounded-lg border border-white/10">
+                  <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <IconComponent className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold text-slate-900 mb-2">
+                  <h3 className="text-xl font-semibold text-white mb-2">
                     {feature.title}
                   </h3>
-                  <p className="text-slate-600">
+                  <p className="text-slate-300">
                     {feature.description}
                   </p>
-                </div>;
-          })}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
