@@ -371,35 +371,6 @@ const Solutions = () => {
             </p>
           </div>
 
-          {/* Technology Highlights */}
-          <div className="mb-16">
-            <div className="grid md:grid-cols-4 gap-8">
-              {[{
-                icon: Award,
-                label: "Ceramic Disc Technology"
-              }, {
-                icon: Zap,
-                label: "High-Flow Riser"
-              }, {
-                icon: Droplets,
-                label: "Smart Metering"
-              }, {
-                icon: Shield,
-                label: "NSF Media"
-              }].map((tech, index) => {
-                const IconComponent = tech.icon;
-                return (
-                  <div key={index} className="flex flex-col items-center">
-                    <div className="w-16 h-16 bg-gradient-to-r from-hsd-blue-light to-hsd-blue rounded-full flex items-center justify-center mb-4 shadow-lg">
-                      <IconComponent className="w-8 h-8 text-white" />
-                    </div>
-                    <p className="text-sm font-medium text-slate-700">{tech.label}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
           {/* Detailed Features */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {proSeriesData.shared_features.map((feature, index) => {
