@@ -1,23 +1,21 @@
-
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Layout from '../components/layout/Layout';
 import { useInView } from 'react-intersection-observer';
-import { 
-  Accordion, 
-  AccordionContent, 
-  AccordionItem, 
-  AccordionTrigger 
-} from '../components/ui/accordion';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
 import { CheckCircle, Droplets, Shield, Zap, Settings, Award } from 'lucide-react';
-
 const Solutions = () => {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
+  const {
+    ref,
+    inView
+  } = useInView({
+    triggerOnce: true,
+    threshold: 0.1
+  });
   const [selectedModels, setSelectedModels] = useState<Set<string>>(new Set());
-
   const toggleModelSpecs = (modelId: string) => {
     const newSelectedModels = new Set(selectedModels);
     if (newSelectedModels.has(modelId)) {
@@ -31,103 +29,92 @@ const Solutions = () => {
   // HSD Pro Series Data
   const proSeriesData = {
     series: "HSD Pro",
-    models: [
-      {
-        id: "pro32",
-        name: "HSD Pro32",
-        capacity_grains: 32000,
-        max_hardness_gpg: 50,
-        max_iron_ppm: 1,
-        valve_flow_gpm: 22,
-        service_flow_gpm: 10,
-        intermittent_flow_gpm: 14,
-        resin_cuft: 1,
-        gravel_lbs: 10,
-        salt_capacity_lbs: 250,
-        pressure_psi: "20–125",
-        plumbing: "1\" NPT",
-        electrical: "120V 50/60Hz line, 12VDC adapter",
-        warranty: "Lifetime tanks & ceramic discs; 10-year parts (resin included)",
-        description: "Perfect for smaller households with moderate hardness levels.",
-        recommended: "1-3 people"
-      },
-      {
-        id: "pro40",
-        name: "HSD Pro40",
-        capacity_grains: 40000,
-        max_hardness_gpg: 65,
-        max_iron_ppm: 3,
-        valve_flow_gpm: 22,
-        service_flow_gpm: 12.5,
-        intermittent_flow_gpm: 17.5,
-        resin_cuft: 1.25,
-        gravel_lbs: 10,
-        salt_capacity_lbs: 250,
-        pressure_psi: "20–125",
-        plumbing: "1\" NPT",
-        electrical: "120V 50/60Hz line, 12VDC adapter",
-        warranty: "Lifetime tanks & ceramic discs; 10-year parts (resin included)",
-        description: "Ideal for medium-sized homes with moderate to high hardness.",
-        recommended: "3-5 people"
-      },
-      {
-        id: "pro48",
-        name: "HSD Pro48",
-        capacity_grains: 48000,
-        max_hardness_gpg: 75,
-        max_iron_ppm: 5,
-        valve_flow_gpm: 22,
-        service_flow_gpm: 15,
-        intermittent_flow_gpm: 21,
-        resin_cuft: 1.5,
-        gravel_lbs: 10,
-        salt_capacity_lbs: 250,
-        pressure_psi: "20–125",
-        plumbing: "1\" NPT",
-        electrical: "120V 50/60Hz line, 12VDC adapter",
-        warranty: "Lifetime tanks & ceramic discs; 10-year parts (resin included)",
-        description: "Maximum capacity for large homes with challenging water conditions.",
-        recommended: "5+ people"
-      }
-    ],
-    shared_features: [
-      {
-        title: "Advanced Ceramic Flow Discs",
-        description: "Aerospace-grade, lifetime-warranty wear parts",
-        icon: Award
-      },
-      {
-        title: "High-Flow Performance", 
-        description: "1.25\" Pro Flow internal riser for consistent pressure",
-        icon: Zap
-      },
-      {
-        title: "Solvent-Free, NSF-rated Premium Media",
-        description: "USA-made, removes hardness minerals",
-        icon: Shield
-      },
-      {
-        title: "Smart Water Conservation",
-        description: "Digital metered regeneration reduces salt & water",
-        icon: Droplets
-      },
-      {
-        title: "Corrosion-Proof Tank",
-        description: "Structural fiberglass-reinforced, lifetime warranty",
-        icon: CheckCircle
-      },
-      {
-        title: "Integrated Smart Controls",
-        description: "Advanced I/O for tough applications",
-        icon: Settings
-      }
-    ]
+    models: [{
+      id: "pro32",
+      name: "HSD Pro32",
+      capacity_grains: 32000,
+      max_hardness_gpg: 50,
+      max_iron_ppm: 1,
+      valve_flow_gpm: 22,
+      service_flow_gpm: 10,
+      intermittent_flow_gpm: 14,
+      resin_cuft: 1,
+      gravel_lbs: 10,
+      salt_capacity_lbs: 250,
+      pressure_psi: "20–125",
+      plumbing: "1\" NPT",
+      electrical: "120V 50/60Hz line, 12VDC adapter",
+      warranty: "Lifetime tanks & ceramic discs; 10-year parts (resin included)",
+      description: "Perfect for smaller households with moderate hardness levels.",
+      recommended: "1-3 people"
+    }, {
+      id: "pro40",
+      name: "HSD Pro40",
+      capacity_grains: 40000,
+      max_hardness_gpg: 65,
+      max_iron_ppm: 3,
+      valve_flow_gpm: 22,
+      service_flow_gpm: 12.5,
+      intermittent_flow_gpm: 17.5,
+      resin_cuft: 1.25,
+      gravel_lbs: 10,
+      salt_capacity_lbs: 250,
+      pressure_psi: "20–125",
+      plumbing: "1\" NPT",
+      electrical: "120V 50/60Hz line, 12VDC adapter",
+      warranty: "Lifetime tanks & ceramic discs; 10-year parts (resin included)",
+      description: "Ideal for medium-sized homes with moderate to high hardness.",
+      recommended: "3-5 people"
+    }, {
+      id: "pro48",
+      name: "HSD Pro48",
+      capacity_grains: 48000,
+      max_hardness_gpg: 75,
+      max_iron_ppm: 5,
+      valve_flow_gpm: 22,
+      service_flow_gpm: 15,
+      intermittent_flow_gpm: 21,
+      resin_cuft: 1.5,
+      gravel_lbs: 10,
+      salt_capacity_lbs: 250,
+      pressure_psi: "20–125",
+      plumbing: "1\" NPT",
+      electrical: "120V 50/60Hz line, 12VDC adapter",
+      warranty: "Lifetime tanks & ceramic discs; 10-year parts (resin included)",
+      description: "Maximum capacity for large homes with challenging water conditions.",
+      recommended: "5+ people"
+    }],
+    shared_features: [{
+      title: "Advanced Ceramic Flow Discs",
+      description: "Aerospace-grade, lifetime-warranty wear parts",
+      icon: Award
+    }, {
+      title: "High-Flow Performance",
+      description: "1.25\" Pro Flow internal riser for consistent pressure",
+      icon: Zap
+    }, {
+      title: "Solvent-Free, NSF-rated Premium Media",
+      description: "USA-made, removes hardness minerals",
+      icon: Shield
+    }, {
+      title: "Smart Water Conservation",
+      description: "Digital metered regeneration reduces salt & water",
+      icon: Droplets
+    }, {
+      title: "Corrosion-Proof Tank",
+      description: "Structural fiberglass-reinforced, lifetime warranty",
+      icon: CheckCircle
+    }, {
+      title: "Integrated Smart Controls",
+      description: "Advanced I/O for tough applications",
+      icon: Settings
+    }]
   };
-
   const scrollToComparison = () => {
-    document.getElementById('comparison')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('comparison')?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -143,37 +130,30 @@ const Solutions = () => {
         "@type": "Product",
         "name": model.name,
         "brand": {
-          "@type": "Brand", 
+          "@type": "Brand",
           "name": "HydroSource Direct"
         },
-        "additionalProperty": [
-          {
-            "@type": "PropertyValue",
-            "name": "Hardness Capacity",
-            "value": `${model.capacity_grains} grains`
-          },
-          {
-            "@type": "PropertyValue", 
-            "name": "Maximum Hardness",
-            "value": `${model.max_hardness_gpg} gpg`
-          },
-          {
-            "@type": "PropertyValue",
-            "name": "Service Flow Rate", 
-            "value": `${model.service_flow_gpm} gpm`
-          },
-          {
-            "@type": "PropertyValue",
-            "name": "Resin Volume",
-            "value": `${model.resin_cuft} cu ft`
-          }
-        ]
+        "additionalProperty": [{
+          "@type": "PropertyValue",
+          "name": "Hardness Capacity",
+          "value": `${model.capacity_grains} grains`
+        }, {
+          "@type": "PropertyValue",
+          "name": "Maximum Hardness",
+          "value": `${model.max_hardness_gpg} gpg`
+        }, {
+          "@type": "PropertyValue",
+          "name": "Service Flow Rate",
+          "value": `${model.service_flow_gpm} gpm`
+        }, {
+          "@type": "PropertyValue",
+          "name": "Resin Volume",
+          "value": `${model.resin_cuft} cu ft`
+        }]
       }
     }))
   };
-
-  return (
-    <Layout>
+  return <Layout>
       <Helmet>
         <title>Solutions | HSD Pro Series Water Softeners | HydroSource Direct</title>
         <meta name="description" content="Compare HSD Pro32, Pro40, Pro48 water softeners—advanced ceramic discs, high-flow performance, smart metered regeneration, lifetime tank warranty." />
@@ -183,15 +163,21 @@ const Solutions = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative pt-24 pb-12 bg-gradient-to-br from-hsd-blue-light/10 via-hsd-blue-light/20 to-hsd-blue/30 overflow-hidden">
+      <section className="relative pt-24 pb-12 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-hsd-blue-light/20 to-hsd-blue/20 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-hsd-blue-light/15 to-hsd-blue/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-400/20 to-indigo-400/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-indigo-400/15 to-purple-400/15 rounded-full blur-3xl animate-pulse" style={{
+          animationDelay: '1s'
+        }}></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full">
-            <div className="w-32 h-32 border border-hsd-blue/30 rounded-lg absolute top-20 left-20 rotate-12 animate-fade-in"></div>
-            <div className="w-24 h-24 border border-hsd-blue-light/40 rounded-full absolute bottom-32 right-32 animate-fade-in" style={{animationDelay: '0.5s'}}></div>
-            <div className="w-16 h-16 bg-gradient-to-r from-hsd-blue-light to-hsd-blue rounded-lg absolute top-40 right-20 rotate-45 animate-fade-in" style={{animationDelay: '1s'}}></div>
+            <div className="w-32 h-32 border border-blue-200/30 rounded-lg absolute top-20 left-20 rotate-12 animate-fade-in"></div>
+            <div className="w-24 h-24 border border-cyan-200/40 rounded-full absolute bottom-32 right-32 animate-fade-in" style={{
+            animationDelay: '0.5s'
+          }}></div>
+            <div className="w-16 h-16 bg-gradient-to-r from-cyan-300/20 to-blue-400/20 rounded-lg absolute top-40 right-20 rotate-45 animate-fade-in" style={{
+            animationDelay: '1s'
+          }}></div>
           </div>
         </div>
 
@@ -216,7 +202,9 @@ const Solutions = () => {
                 </button>
               </div>
             </div>
-            <div className="relative animate-fade-in" style={{animationDelay: '0.3s'}}>
+            <div className="relative animate-fade-in" style={{
+            animationDelay: '0.3s'
+          }}>
               {/* Modern geometric design instead of product image */}
               <div className="relative max-w-md mx-auto">
                 <div className="bg-gradient-to-br from-white/80 to-blue-50/80 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/20">
@@ -251,8 +239,10 @@ const Solutions = () => {
                   </div>
                 </div>
                 {/* Floating accent elements */}
-                <div className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-full opacity-60 animate-pulse"></div>
-                <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-gradient-to-r from-indigo-400 to-purple-400 rounded-full opacity-60 animate-pulse" style={{animationDelay: '1s'}}></div>
+                <div className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-hsd-blue-light to-hsd-blue rounded-full opacity-60 animate-pulse"></div>
+                <div style={{
+                animationDelay: '1s'
+              }} className="absolute -bottom-4 -left-4 w-6 h-6 bg-gradient-to-r from-hsd-blue-light to-hsd-blue rounded-full opacity-60 animate-pulse"></div>
               </div>
             </div>
           </div>
@@ -272,15 +262,10 @@ const Solutions = () => {
           </div>
 
           <div className="grid lg:grid-cols-3 gap-6">
-            {proSeriesData.models.map((model, index) => (
-              <Card key={model.id} className="group hover:shadow-xl transition-all duration-300">
+            {proSeriesData.models.map((model, index) => <Card key={model.id} className="group hover:shadow-xl transition-all duration-300">
                 <CardHeader className="text-center pb-4">
                   <div className="relative mb-4">
-                    <img 
-                      src="/lovable-uploads/c0046fe2-4a63-4a89-8b7e-91e63df91c4e.png"
-                      alt={model.name}
-                      className="w-full max-w-xs mx-auto rounded-lg"
-                    />
+                    <img src="/lovable-uploads/c0046fe2-4a63-4a89-8b7e-91e63df91c4e.png" alt={model.name} className="w-full max-w-xs mx-auto rounded-lg" />
                     <Badge className="absolute top-2 right-2 bg-primary">
                       {model.recommended}
                     </Badge>
@@ -309,10 +294,7 @@ const Solutions = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <button 
-                      onClick={() => toggleModelSpecs(model.id)}
-                      className="w-full btn-secondary text-sm"
-                    >
+                    <button onClick={() => toggleModelSpecs(model.id)} className="w-full btn-secondary text-sm">
                       {selectedModels.has(model.id) ? 'Hide' : 'View'} Full Specs
                     </button>
                     <Link to="/contact" className="w-full btn-primary block text-center">
@@ -320,8 +302,7 @@ const Solutions = () => {
                     </Link>
                   </div>
 
-                  {selectedModels.has(model.id) && (
-                    <div className="mt-4 p-4 bg-white border rounded-lg animate-fade-in">
+                  {selectedModels.has(model.id) && <div className="mt-4 p-4 bg-white border rounded-lg animate-fade-in">
                       <div className="grid grid-cols-2 gap-2 text-sm">
                         <div><strong>Max Iron:</strong> {model.max_iron_ppm} ppm</div>
                         <div><strong>Valve Flow:</strong> {model.valve_flow_gpm} gpm</div>
@@ -330,11 +311,9 @@ const Solutions = () => {
                         <div><strong>Pressure Range:</strong> {model.pressure_psi} psi</div>
                         <div><strong>Connection:</strong> {model.plumbing}</div>
                       </div>
-                    </div>
-                  )}
+                    </div>}
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -385,22 +364,27 @@ const Solutions = () => {
             Advanced Technology and Applied Science for Superior Water Treatment
           </h2>
           <div className="grid md:grid-cols-4 gap-8">
-            {[
-              { icon: Award, label: "Ceramic Disc Technology" },
-              { icon: Zap, label: "High-Flow Riser" },
-              { icon: Droplets, label: "Smart Metering" },
-              { icon: Shield, label: "NSF Media" }
-            ].map((tech, index) => {
-              const IconComponent = tech.icon;
-              return (
-                <div key={index} className="flex flex-col items-center">
+            {[{
+            icon: Award,
+            label: "Ceramic Disc Technology"
+          }, {
+            icon: Zap,
+            label: "High-Flow Riser"
+          }, {
+            icon: Droplets,
+            label: "Smart Metering"
+          }, {
+            icon: Shield,
+            label: "NSF Media"
+          }].map((tech, index) => {
+            const IconComponent = tech.icon;
+            return <div key={index} className="flex flex-col items-center">
                   <div className="w-16 h-16 border-2 border-white/20 rounded-full flex items-center justify-center mb-4">
                     <IconComponent className="w-8 h-8" />
                   </div>
                   <p className="text-sm font-medium">{tech.label}</p>
-                </div>
-              );
-            })}
+                </div>;
+          })}
           </div>
         </div>
       </section>
@@ -419,9 +403,8 @@ const Solutions = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {proSeriesData.shared_features.map((feature, index) => {
-              const IconComponent = feature.icon;
-              return (
-                <div key={index} className="text-center p-6">
+            const IconComponent = feature.icon;
+            return <div key={index} className="text-center p-6">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <IconComponent className="w-8 h-8 text-primary" />
                   </div>
@@ -431,9 +414,8 @@ const Solutions = () => {
                   <p className="text-slate-600">
                     {feature.description}
                   </p>
-                </div>
-              );
-            })}
+                </div>;
+          })}
           </div>
         </div>
       </section>
@@ -461,29 +443,14 @@ const Solutions = () => {
                 </tr>
               </thead>
               <tbody>
-                {[
-                  ['Hardness Capacity (grains @ max salt dose)', ...proSeriesData.models.map(m => m.capacity_grains.toLocaleString())],
-                  ['Maximum Hardness (gpg)', ...proSeriesData.models.map(m => m.max_hardness_gpg)],
-                  ['Maximum Clear Water Iron (ppm)', ...proSeriesData.models.map(m => m.max_iron_ppm)],
-                  ['Valve Flow Rate (gpm)', ...proSeriesData.models.map(m => m.valve_flow_gpm)],
-                  ['Service Flow Rate (gpm)', ...proSeriesData.models.map(m => m.service_flow_gpm)],
-                  ['Intermittent Flow Rate (gpm)', ...proSeriesData.models.map(m => m.intermittent_flow_gpm)],
-                  ['Resin Volume (cu ft)', ...proSeriesData.models.map(m => m.resin_cuft)],
-                  ['Quartz Gravel Base (lbs)', ...proSeriesData.models.map(m => m.gravel_lbs)],
-                  ['Salt Storage Capacity (lbs)', ...proSeriesData.models.map(m => m.salt_capacity_lbs)],
-                  ['Water Pressure Operating Range (psi)', ...proSeriesData.models.map(m => m.pressure_psi)],
-                  ['Supplied Plumbing Connection', ...proSeriesData.models.map(m => m.plumbing)],
-                  ['Electrical', ...proSeriesData.models.map(m => m.electrical)]
-                ].map((row, index) => (
-                  <tr key={index} className={index % 2 === 0 ? 'bg-slate-50' : 'bg-white'}>
+                {[['Hardness Capacity (grains @ max salt dose)', ...proSeriesData.models.map(m => m.capacity_grains.toLocaleString())], ['Maximum Hardness (gpg)', ...proSeriesData.models.map(m => m.max_hardness_gpg)], ['Maximum Clear Water Iron (ppm)', ...proSeriesData.models.map(m => m.max_iron_ppm)], ['Valve Flow Rate (gpm)', ...proSeriesData.models.map(m => m.valve_flow_gpm)], ['Service Flow Rate (gpm)', ...proSeriesData.models.map(m => m.service_flow_gpm)], ['Intermittent Flow Rate (gpm)', ...proSeriesData.models.map(m => m.intermittent_flow_gpm)], ['Resin Volume (cu ft)', ...proSeriesData.models.map(m => m.resin_cuft)], ['Quartz Gravel Base (lbs)', ...proSeriesData.models.map(m => m.gravel_lbs)], ['Salt Storage Capacity (lbs)', ...proSeriesData.models.map(m => m.salt_capacity_lbs)], ['Water Pressure Operating Range (psi)', ...proSeriesData.models.map(m => m.pressure_psi)], ['Supplied Plumbing Connection', ...proSeriesData.models.map(m => m.plumbing)], ['Electrical', ...proSeriesData.models.map(m => m.electrical)]].map((row, index) => <tr key={index} className={index % 2 === 0 ? 'bg-slate-50' : 'bg-white'}>
                     <td className="p-4 font-medium text-slate-900 sticky left-0 bg-inherit border-r border-slate-200">
                       {row[0]}
                     </td>
                     <td className="p-4 text-center text-slate-700">{row[1]}</td>
                     <td className="p-4 text-center text-slate-700">{row[2]}</td>
                     <td className="p-4 text-center text-slate-700">{row[3]}</td>
-                  </tr>
-                ))}
+                  </tr>)}
               </tbody>
             </table>
           </div>
@@ -505,8 +472,6 @@ const Solutions = () => {
         </div>
       </section>
 
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Solutions;
