@@ -2,7 +2,6 @@
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import Layout from '../components/layout/Layout';
-import CtaSection from '../components/home/CtaSection';
 import { useInView } from 'react-intersection-observer';
 
 const Solutions = () => {
@@ -118,7 +117,7 @@ const Solutions = () => {
         </div>
       </div>
       
-      <CtaSection />
+      
     </Layout>
   );
 };
