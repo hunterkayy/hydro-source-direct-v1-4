@@ -115,6 +115,12 @@ const Solutions = () => {
       behavior: 'smooth'
     });
   };
+
+  const scrollToWarranty = () => {
+    document.getElementById('warranty')?.scrollIntoView({
+      behavior: 'smooth'
+    });
+  };
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -282,9 +288,12 @@ const Solutions = () => {
                   </div>
                   
                   <div className="bg-green-50 border border-green-200 p-3 rounded-lg">
-                    <p className="text-xs text-green-800 font-medium">
-                      🛡️ {model.warranty}
-                    </p>
+                    <button 
+                      onClick={scrollToWarranty}
+                      className="text-xs text-green-800 font-medium hover:text-green-900 transition-colors cursor-pointer underline decoration-dotted underline-offset-2"
+                    >
+                      🛡️ Lifetime Warranty details
+                    </button>
                   </div>
 
                   <div className="space-y-2">
@@ -394,7 +403,7 @@ const Solutions = () => {
       </section>
 
       {/* Industry-Leading Warranty */}
-      <section className="py-12">
+      <section id="warranty" className="py-12">
         <div className="container-custom">
           <Card className="max-w-4xl mx-auto bg-gradient-to-r from-hsd-blue-light/10 to-hsd-blue/10 border-hsd-blue-light/20">
             <CardContent className="p-8 text-center">
