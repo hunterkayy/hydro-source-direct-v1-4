@@ -217,13 +217,13 @@ const Solutions = () => {
       </section>
 
       {/* Product Lineup */}
-      <section className="section-padding bg-slate-50">
+      <section className="py-16 bg-slate-50">
         <div className="container-custom">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
               Product Lineup
             </h2>
-            <p className="text-lg text-slate-600">
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
               Choose the perfect system for your home's water needs
             </p>
           </div>
