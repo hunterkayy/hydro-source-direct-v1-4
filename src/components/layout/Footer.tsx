@@ -8,11 +8,11 @@ const Footer = () => {
   return (
     <footer className="bg-slate-900 text-white">
       <div className="container-custom mx-auto">
-        <div className="py-16">
+        <div className="py-8">
           {/* Main Footer Content */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-6">
             {/* Large Logo */}
-            <Link to="/" className="inline-block mb-6">
+            <Link to="/" className="inline-block mb-4">
               <img 
                 src="/lovable-uploads/2855fce6-7761-4921-bb50-12299acd7217.png" 
                 alt="HydroSource Direct Logo" 
@@ -21,12 +21,12 @@ const Footer = () => {
             </Link>
             
             {/* Company Description */}
-            <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-300 mb-4 max-w-2xl mx-auto leading-relaxed">
               HydroSource Direct provides premium water treatment solutions for homes and businesses, ensuring clean, pure water for healthier living.
             </p>
             
             {/* Contact Information */}
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-8 mb-8">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mb-4">
               <a href="tel:+18001234567" className="flex items-center text-gray-300 hover:text-white transition-custom group">
                 <div className="w-12 h-12 bg-hsd-blue-light rounded-full flex items-center justify-center mr-3 group-hover:scale-110 transition-transform duration-300">
                   <Phone className="h-6 w-6 text-white" />
