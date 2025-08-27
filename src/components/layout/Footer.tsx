@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-slate-900 text-white">
       <div className="container-custom mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-12">
           {/* Logo and About */}
           <div>
             <Link to="/" className="inline-block mb-4">
@@ -35,50 +35,6 @@ const Footer = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
             </div>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-lg font-bold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/" className="text-gray-300 hover:text-white transition-custom">Home</Link>
-              </li>
-              <li>
-                <Link to="/solutions" className="text-gray-300 hover:text-white transition-custom">Solutions</Link>
-              </li>
-              <li>
-                <Link to="/why-water-quality" className="text-gray-300 hover:text-white transition-custom">Why Water Quality?</Link>
-              </li>
-              <li>
-                <Link to="/find-solution" className="text-gray-300 hover:text-white transition-custom">Find Your Solution</Link>
-              </li>
-              <li>
-                <Link to="/contact" className="text-gray-300 hover:text-white transition-custom">Contact</Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Solutions */}
-          <div>
-            <h4 className="text-lg font-bold mb-4">Solutions</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/solutions/water-softeners" className="text-gray-300 hover:text-white transition-custom">Water Softeners</Link>
-              </li>
-              <li>
-                <Link to="/solutions/iron-filters" className="text-gray-300 hover:text-white transition-custom">Iron Filters</Link>
-              </li>
-              <li>
-                <Link to="/solutions/reverse-osmosis" className="text-gray-300 hover:text-white transition-custom">Reverse Osmosis</Link>
-              </li>
-              <li>
-                <Link to="/solutions/uv-systems" className="text-gray-300 hover:text-white transition-custom">UV Systems</Link>
-              </li>
-              <li>
-                <Link to="/solutions" className="text-gray-300 hover:text-white transition-custom">All Solutions</Link>
-              </li>
-            </ul>
           </div>
 
           {/* Contact Info */}
