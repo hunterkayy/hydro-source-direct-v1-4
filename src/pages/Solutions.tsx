@@ -117,9 +117,12 @@ const Solutions = () => {
   };
 
   const scrollToWarranty = () => {
-    document.getElementById('warranty')?.scrollIntoView({
-      behavior: 'smooth'
-    });
+    const element = document.getElementById('warranty');
+    if (element) {
+      const yOffset = -80; // Offset for fixed header
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
   };
   const jsonLd = {
     "@context": "https://schema.org",
@@ -287,12 +290,16 @@ const Solutions = () => {
                     </ul>
                   </div>
                   
-                  <div className="bg-green-50 border border-green-200 p-3 rounded-lg">
+                  <div className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 p-3 rounded-lg group hover:shadow-md transition-all duration-200">
                     <button 
                       onClick={scrollToWarranty}
-                      className="text-xs text-green-800 font-medium hover:text-green-900 transition-colors cursor-pointer underline decoration-dotted underline-offset-2"
+                      className="flex items-center gap-2 w-full text-sm font-semibold text-green-800 hover:text-green-900 transition-colors group-hover:scale-105 transform duration-200"
                     >
-                      🛡️ Lifetime Warranty details
+                      <Shield className="w-4 h-4 text-green-600" />
+                      <span>Lifetime Warranty Details</span>
+                      <div className="ml-auto">
+                        <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                      </div>
                     </button>
                   </div>
 
